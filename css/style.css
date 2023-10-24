@@ -8,11 +8,30 @@ Text Colour (dark grey): #292929;
 Background Colour (white): #FDFDFD;
 */
 
+header {
+    background-color: #BFB6AE;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 5px 5px 37px rgba(0, 0, 0, 0.2)  ; 
+    position: fixed
+}
 
+
+main {
+    padding-top: 164px;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  
 body {
     background-color: #FDFDFD;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px; 
+    font-size: 14px; 
     font-weight: 400; 
     line-height: 1.6; 
     color: #292929; /* Font colour */
@@ -24,6 +43,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700; /* Bold */
+  
 }
 
 h2 {
@@ -104,3 +124,78 @@ img {
   color: #ffffff;
   border: 2px solid #545454;
 }
+
+
+
+/* Layout styling */
+
+.container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+
+  #work .row { 
+    padding-bottom: 25px; 
+    border-bottom: 1px 
+    solid #4a4a4a; 
+  }
+
+  #skills .row { 
+    padding-bottom: 25px; 
+    border-bottom: 1px 
+    solid #4a4a4a; 
+  }
+
+  #hero h1, h2 {
+    text-align: center; /* Centers text */
+  }
+
+  #hero p {
+    text-align: center; /* Centers text */
+  }
+
+  #main h1, h2 {
+    text-align: center; /* Centers text */
+  }
+
+
+  .logo {  /* Logo size */
+    max-width: 250px;
+  }
+
+
+  nav > ul {    /* Removes bullet points*/
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4a4a4a;
+  }
+
+
+  #hero {
+    background-color: #BFB6AE;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .social-links {
+    width: 50px;
+    padding: 2px;
+  }
