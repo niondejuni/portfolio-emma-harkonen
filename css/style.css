@@ -65,7 +65,6 @@ img {
   }
 
   
-
   /* Hyperlinks */
 
   a {
@@ -117,12 +116,15 @@ img {
     color: #292929;
     text-transform: uppercase;
     border: 2px solid #292929;
+
+    
   }
 
   .button.contact:hover {
   background-color: #545454;
   color: #ffffff;
   border: 2px solid #545454;
+  
 }
 
 
@@ -266,3 +268,53 @@ Screen sizes
 @media only screen and (min-width: 1440px) {
 }
 
+
+
+
+
+/*Animation*/
+
+.animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+ .sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+ 
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back { /*Short way to anminate*/
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
