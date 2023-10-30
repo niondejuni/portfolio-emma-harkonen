@@ -8,9 +8,10 @@ Text Colour (dark grey): #292929;
 Background Colour (white): #FDFDFD;
 */
 
+
+
 header {
     background-color: #BFB6AE;
-    text-align: center;
     padding: 10px 0;
     width: 100%;
     box-shadow: 5px 5px 37px rgba(0, 0, 0, 0.2)  ; 
@@ -19,9 +20,8 @@ header {
 
 
 main {
-    padding-top: 164px;
+    padding-top: 79px;
   }
-
 
   * {
     box-sizing: border-box;
@@ -177,18 +177,17 @@ img {
   }
 
   .logo {  /* Logo size */
-    max-width: 250px;
+    max-width: 150px;
+  
   }
 
 
   nav > ul {    /* Removes bullet points*/
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
-  nav > ul > li {
-    display: inline-block;
-  }
 
   nav > ul > li > a {
     padding: 0 15px;
@@ -196,6 +195,43 @@ img {
     font-weight: 500;
     color: #4a4a4a;
   }
+
+/*Hamburger menu*/
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
+
+  /*Styling menu*/
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 0.5px solid #9B938C;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+  
 
 
   #hero {
@@ -238,15 +274,29 @@ Screen sizes
         padding: 20px 0 13px;
       }
 
+      nav > ul > li {
+        display: inline-block;
+      }
+      
+
     nav {
         width: auto;
         float: right;
         margin-top: 14px;
       }  
 
+      nav > ul {
+        margin: 1em 0;
+      }
+
     main {
         padding-top: 116px;
       } 
+
+      .logo {  /* Logo size */
+        max-width: 250px;
+      
+      }
     /*
     body {
         font-size: 18px;
@@ -261,7 +311,13 @@ Screen sizes
         padding: 10px
       }  
 
-      
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
 }
 
 /* Large devices (1024px or larger)*/
@@ -277,10 +333,27 @@ Screen sizes
     
       }
 
+      .logo {  /* Logo size */
+        max-width: 250px;
+      
+      }
+
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      nav > ul {
+        margin: 1em 0;
+      }
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
       }
 
 }

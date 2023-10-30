@@ -9,18 +9,22 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
           <!-- Put in fontlink -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3d0e9fd603.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <img class="logo" src="img/logo2.svg" alt="Emma Härkönen">
             <nav>
                 <ul class="navigation">
                 <li><a href="index.html"> Work</a></li>
                 <li><a href="about.html"> About</a></li>
-                <li><a href="#contact"> Contact</a></li>
+                <li><a href="#contact" onclick="menuToggle()"> Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -696,7 +700,7 @@
           </div>
         </div>
         </footer>
-
-        <script src="js/scripts.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
