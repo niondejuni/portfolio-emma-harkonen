@@ -245,10 +245,10 @@ img {
     text-align: center;
   }
 
-
   #about {
     text-align: center;
   }
+
 
 
   .social-links {
@@ -294,7 +294,10 @@ Screen sizes
         max-width: 250px;
       
       }
-  
+    /*
+    body {
+        font-size: 18px;
+      } */
 
       .col-md-6 {
         width: 50%;
